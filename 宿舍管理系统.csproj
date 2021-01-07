@@ -1,0 +1,480 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2632FF05-61E6-4073-B8A3-6AE64CB264B6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>宿舍管理系统</RootNamespace>
+    <AssemblyName>宿舍管理系统</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Main.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studentnew.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>studentnew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人员管理.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>人员管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="人员查询.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>人员查询.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="修改密码.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>修改密码.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="房屋报修查询.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>房屋报修查询.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="房屋报修添加.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>房屋报修添加.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="房屋报修管理.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>房屋报修管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="宿舍信息查询.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>宿舍信息查询.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="宿舍信息登记.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>宿舍信息登记.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="宿舍信息管理.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>宿舍信息管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="卫生检查查询.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>卫生检查查询.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="卫生检查登记.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>卫生检查登记.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="卫生检查管理.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>卫生检查管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="校内人员来访查询.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>校内人员来访查询.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="校内人员登记.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>校内人员登记.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="校内人员管理.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>校内人员管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="校外人员来访查询.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>校外人员来访查询.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="校外人员登记表.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>校外人员登记表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="校外人员管理.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>校外人员管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="用户登录.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>用户登录.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="水电收费信息查询.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>水电收费信息查询.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="水电收费登记.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>水电收费登记.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="水电收费管理.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>水电收费管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="studentDataSet.xsc">
+      <DependentUpon>studentDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="studentDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>studentDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="studentDataSet.xss">
+      <DependentUpon>studentDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="sufeiDataSet.xsc">
+      <DependentUpon>sufeiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="sufeiDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sufeiDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sufeiDataSet.xss">
+      <DependentUpon>sufeiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="sufeiDataSet1.xsc">
+      <DependentUpon>sufeiDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="sufeiDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sufeiDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sufeiDataSet1.xss">
+      <DependentUpon>sufeiDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="sufeiDataSet3.xsc">
+      <DependentUpon>sufeiDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="sufeiDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sufeiDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sufeiDataSet3.xss">
+      <DependentUpon>sufeiDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="sufeiDataSet4.xsc">
+      <DependentUpon>sufeiDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="sufeiDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sufeiDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sufeiDataSet4.xss">
+      <DependentUpon>sufeiDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="sufeiDataSet5.xsc">
+      <DependentUpon>sufeiDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="sufeiDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sufeiDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sufeiDataSet5.xss">
+      <DependentUpon>sufeiDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="sufeiDataSet6.xsc">
+      <DependentUpon>sufeiDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="sufeiDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sufeiDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sufeiDataSet6.xss">
+      <DependentUpon>sufeiDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="sufeiDataSet7.xsc">
+      <DependentUpon>sufeiDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="sufeiDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sufeiDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sufeiDataSet7.xss">
+      <DependentUpon>sufeiDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="sufeiDataSet8.xsc">
+      <DependentUpon>sufeiDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="sufeiDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sufeiDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sufeiDataSet8.xss">
+      <DependentUpon>sufeiDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="sufeiDataSet9.xsc">
+      <DependentUpon>sufeiDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="sufeiDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sufeiDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sufeiDataSet9.xss">
+      <DependentUpon>sufeiDataSet9.xsd</DependentUpon>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="studentnew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studentnew.Designer.cs">
+      <DependentUpon>studentnew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="studentDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>studentDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sufeiDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sufeiDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sufeiDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sufeiDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sufeiDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sufeiDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sufeiDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sufeiDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sufeiDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sufeiDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sufeiDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sufeiDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sufeiDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sufeiDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sufeiDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sufeiDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sufeiDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sufeiDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="人员管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人员管理.Designer.cs">
+      <DependentUpon>人员管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="人员查询.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="人员查询.Designer.cs">
+      <DependentUpon>人员查询.cs</DependentUpon>
+    </Compile>
+    <Compile Include="修改密码.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="修改密码.Designer.cs">
+      <DependentUpon>修改密码.cs</DependentUpon>
+    </Compile>
+    <Compile Include="房屋报修查询.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="房屋报修查询.Designer.cs">
+      <DependentUpon>房屋报修查询.cs</DependentUpon>
+    </Compile>
+    <Compile Include="房屋报修添加.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="房屋报修添加.Designer.cs">
+      <DependentUpon>房屋报修添加.cs</DependentUpon>
+    </Compile>
+    <Compile Include="房屋报修管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="房屋报修管理.Designer.cs">
+      <DependentUpon>房屋报修管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="宿舍信息查询.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="宿舍信息查询.Designer.cs">
+      <DependentUpon>宿舍信息查询.cs</DependentUpon>
+    </Compile>
+    <Compile Include="宿舍信息登记.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="宿舍信息登记.Designer.cs">
+      <DependentUpon>宿舍信息登记.cs</DependentUpon>
+    </Compile>
+    <Compile Include="宿舍信息管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="宿舍信息管理.Designer.cs">
+      <DependentUpon>宿舍信息管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="卫生检查查询.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="卫生检查查询.Designer.cs">
+      <DependentUpon>卫生检查查询.cs</DependentUpon>
+    </Compile>
+    <Compile Include="卫生检查登记.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="卫生检查登记.Designer.cs">
+      <DependentUpon>卫生检查登记.cs</DependentUpon>
+    </Compile>
+    <Compile Include="卫生检查管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="卫生检查管理.Designer.cs">
+      <DependentUpon>卫生检查管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="校内人员来访查询.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="校内人员来访查询.Designer.cs">
+      <DependentUpon>校内人员来访查询.cs</DependentUpon>
+    </Compile>
+    <Compile Include="校内人员登记.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="校内人员登记.Designer.cs">
+      <DependentUpon>校内人员登记.cs</DependentUpon>
+    </Compile>
+    <Compile Include="校内人员管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="校内人员管理.Designer.cs">
+      <DependentUpon>校内人员管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="校外人员来访查询.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="校外人员来访查询.Designer.cs">
+      <DependentUpon>校外人员来访查询.cs</DependentUpon>
+    </Compile>
+    <Compile Include="校外人员登记表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="校外人员登记表.Designer.cs">
+      <DependentUpon>校外人员登记表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="校外人员管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="校外人员管理.Designer.cs">
+      <DependentUpon>校外人员管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="用户登录.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="用户登录.Designer.cs">
+      <DependentUpon>用户登录.cs</DependentUpon>
+    </Compile>
+    <Compile Include="水电收费信息查询.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="水电收费信息查询.Designer.cs">
+      <DependentUpon>水电收费信息查询.cs</DependentUpon>
+    </Compile>
+    <Compile Include="水电收费登记.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="水电收费登记.Designer.cs">
+      <DependentUpon>水电收费登记.cs</DependentUpon>
+    </Compile>
+    <Compile Include="水电收费管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="水电收费管理.Designer.cs">
+      <DependentUpon>水电收费管理.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
